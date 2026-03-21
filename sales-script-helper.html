@@ -502,6 +502,9 @@
     <button onclick="showTab('debtcodes')" data-tab="debtcodes">
       <span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span><span>Debt Cheat Sheet</span>
     </button>
+    <button onclick="showTab('training')" data-tab="training">
+      <span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg></span><span>Training Audio</span>
+    </button>
   </nav>
 
   <!-- CONTENT -->
@@ -1792,6 +1795,46 @@
         <h3 style="color:var(--blue);margin-bottom:12px;">Secured vs Unsecured</h3>
         <div class="script-line important" style="margin-bottom:10px;">You ALWAYS HAVE TO ASK — don't rely on what it says on the credit report. It is sometimes listed as UNSECURED but is actually SECURED. You have to ask! Never ever try to push through a debt that is secured to an asset — client will be SUED, ASSET taken, and client will be pissed off you lied to them.</div>
         <div class="script-line important" style="margin-bottom:10px;"><strong>Do NOT Enroll "CHIME" or Secured REV's or Credit Builders</strong></div>
+      </div>
+    </div>
+
+    <!-- TRAINING AUDIO -->
+    <div id="tab-training" class="tab-content">
+      <h2 class="section-title">Training Audio</h2>
+      <div class="section-subtitle">Listen to recorded calls and training sessions. Click play to listen directly in the helper.</div>
+
+      <div id="training-list" style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
+
+        <!-- PLACEHOLDER: Replace the YouTube ID below with your actual video IDs -->
+        <!-- To add a new recording: copy a card block, change the title, description, and YouTube embed URL -->
+        <!-- YouTube embed URL format: https://www.youtube.com/embed/VIDEO_ID_HERE -->
+
+        <div style="background:var(--surface2);border-radius:8px;padding:16px;border:1px solid var(--border);">
+          <div style="color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Sample — Replace with your recordings</div>
+          <div style="font-weight:600;color:var(--text);margin-bottom:8px;">How to Add Your Audio Recordings</div>
+          <div style="color:var(--text-muted);font-size:13px;margin-bottom:12px;">
+            1. Upload your audio/video to YouTube as <strong>Unlisted</strong><br>
+            2. Copy the video ID from the URL (the part after v=)<br>
+            3. Edit this section — replace <code>VIDEO_ID_HERE</code> with your ID<br>
+            4. Duplicate the card block below for each new recording
+          </div>
+        </div>
+
+        <!--
+        ========================================
+        TEMPLATE: Copy this block for each new recording.
+        Replace VIDEO_ID_HERE with the YouTube video ID.
+        Replace the title and description.
+        ========================================
+        -->
+        <div class="audio-card" style="background:var(--surface2);border-radius:8px;padding:16px;border:1px solid var(--border);">
+          <div style="font-weight:600;color:var(--text);margin-bottom:4px;">Recording Title Here</div>
+          <div style="color:var(--text-muted);font-size:13px;margin-bottom:12px;">Short description of this recording.</div>
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:6px;">
+            <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:6px;" src="https://www.youtube.com/embed/VIDEO_ID_HERE" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
       </div>
     </div>
 
